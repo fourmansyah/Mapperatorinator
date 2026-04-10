@@ -13,7 +13,7 @@ from osu_diffusion.config import DiffusionTrainConfig
 
 @dataclass
 class InferenceConfig:
-    model_path: str = 'OliBomby/Mapperatorinator-v31'  # Path to trained model
+    model_path: str = ''  # Path to trained model
     audio_path: Optional[str] = None  # Path to input audio
     output_path: Optional[str] = None  # Path to output directory
     beatmap_path: Optional[str] = None  # Path to .osu file to autofill metadata and use as reference
@@ -76,7 +76,7 @@ class InferenceConfig:
     resnap_events: bool = True  # Resnap notes to the timing after generation
 
     # Metadata settings
-    bpm: Optional[int] = 150  # Beats per minute of input audio
+    bpm: Optional[int] = None  # Beats per minute of input audio
     offset: Optional[int] = None  # Start of beat, in miliseconds, from the beginning of input audio
     title: Optional[str] = None  # Song title
     title_unicode: Optional[str] = None  # Song title in Unicode/Japanese
