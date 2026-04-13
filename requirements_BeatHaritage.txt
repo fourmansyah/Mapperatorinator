@@ -20,3 +20,4 @@ audioop-lts; python_version>='3.13'
 rich
 torchaudio
 rosu-pp-py
+peft
