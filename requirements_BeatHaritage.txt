@@ -21,3 +21,4 @@ rich
 torchaudio
 rosu-pp-py
 peft
+yt-dlp
